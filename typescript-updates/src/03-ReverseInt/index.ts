@@ -12,12 +12,7 @@
  *
  * @param {number} n
  */
-function reverseInt(n) {
-   const numberString = n.toString();
+const reverseInt = (n: number): number =>
+   Math.sign(n) * parseInt(n.toString().split("").reverse().join(""));
 
-   const reversedNumberString = numberString.split("").reverse().join("");
-
-   return Math.sign(n) * parseInt(reversedNumberString);
-}
-
-module.exports = reverseInt;
+export default reverseInt;
