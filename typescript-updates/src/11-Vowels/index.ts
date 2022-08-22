@@ -7,11 +7,7 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-/**
- *
- * @param {string} str
- */
-function vowels(str) {
+function vowels(str: string) {
    let vowelCount = 0;
 
    const vowels = ["a", "e", "i", "o", "u"];
